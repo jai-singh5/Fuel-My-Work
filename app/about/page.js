@@ -124,6 +124,22 @@ const About = () => {
               <li>Receive valuable feedback and encouragement from peers</li>
             </ul>
           </div>
+          <div
+            className="absolute top-0 left-0 z-0 h-1/3 w-full "
+            style={{
+              backgroundImage:
+                "linear-gradient(to left bottom, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
+              borderColor: "rgba(92, 79, 240, 0.2)",
+            }}
+          ></div>
+          <div
+            className="absolute top-0 right-0 z-0 h-1/3 w-full"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right bottom, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
+              borderColor: "rgba(92, 79, 240, 0.2)",
+            }}
+          ></div>
         </section>
 
 

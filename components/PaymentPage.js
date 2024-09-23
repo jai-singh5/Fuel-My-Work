@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
-import { fetchpayments, initiate, fetchuser, totalpayments,} from "@/actions/useractions";
+import { fetchpayments, initiate, fetchuser, totalpayments, } from "@/actions/useractions";
 import { useSession } from "next-auth/react";
 import { useSearchParams } from "next/navigation";
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import { Bounce } from 'react-toastify'
 import { useRouter } from "next/navigation";
+import CoverpicSkeleteon from "./CoverpicSkeleteon";
 
 
 const PaymentPage = ({ username }) => {
@@ -103,18 +104,25 @@ const PaymentPage = ({ username }) => {
 
             <Script src="https://checkout.razorpay.com/v1/checkout.js"></Script>
             <div className="cover w-full relative">
-                <img
-                    className="object-cover w-full h-90 md:h-[350] "
-                    src={currentUser.coverpic}
-                    alt=""
-                />
-                <div className="absolute -bottom-16 right-[34%] md:right-[45%] border-red-600 border-4 overflow-hidden rounded-full size-36">
+                {currentUser.coverpic?(
                     <img
-                        className="rounded-full object-cover size-36"
-                        width={200}
-                        height={200}
-                        src={currentUser.profilepic}
-                        alt=""
+                        className="object-cover h-40 md:md:h-[21rem] w-full"
+                        src={currentUser.coverpic}
+                        alt="coverImage"
+                        onError={(e) => (e.target.src = <CoverpicSkeleteon />)}
+                    />
+                ):(
+                    <CoverpicSkeleteon />
+                )}
+                <div className=" size-20 md:size-32 object-center absolute mx-auto right-0 left-0 -bottom-12 md:-bottom-16 border-4 overflow-hidden border-red-600 rounded-full bg-black">
+                    <img
+                        className="object-cover size-20 md:size-32 "
+                        src={
+                            currentUser.profilepic?currentUser.profilepic
+                                : "./avatar.gif"
+                        }
+                        alt="avatarImage"
+                        onError={(e) => (e.target.src = "./avatar.gif")}
                     />
                 </div>
             </div>

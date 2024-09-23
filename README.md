@@ -2,18 +2,12 @@
 
 Fuel My Work is a crowdfunding platform designed specifically for developers, creators, and influencers. Our platform allows users to support their favorite projects and creators financially, helping them bring their visions to life. With intuitive design tools and a focus on simplicity, Fuel My Work makes it easy for creators to launch and manage campaigns.
 
-## Features
+## Technologies Used
 
-- **Customizable Campaign Pages**: Tailor your campaign's look and feel to match your unique style, including color schemes, fonts, and page design.
-- **High Performance**: Our platform is optimized for speed, ensuring fast load times so your supporters can access your campaign quickly and easily.
-- **Comprehensive Tools**: Everything you need to run a successful campaign, from analytics to support tools, right out of the box.
-- **Secure Payments**: Integration with Razorpay for secure and smooth transactions.
-
-## Tech Stack
-
-- **Next.js**: For server-side rendering and fast, optimized web performance.
-- **Tailwind CSS**: For custom styling and responsive design.
-- **Razorpay**: For secure and seamless payment processing.
+- **Frontend & Backend**: Next.js (JavaScript) 
+- **Styling**: Tailwind CSS
+- **Database**: MongoDB
+- **Payments**: Razorpay integration
 
 ## Getting Started
 
@@ -48,7 +42,7 @@ npm run dev
 ```
 
 
-Open [http://localhost:3000(http://localhost:3000)] with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 

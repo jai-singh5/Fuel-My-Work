@@ -66,10 +66,31 @@ const Dashboard = () => {
         pauseOnHover
         theme="dark"
       />
-      <div className="container mx-auto py-5 px-6">
-        <h1 className="text-3xl font-bold text-center py-5">
+      <div className="container ">
+      <section
+          id="features"
+          className="relative block px-6 py-10 md:py-10 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
+        >
+        <h1 className="text-3xl font-bold text-center py-2">
           Welcome to your dashboard
         </h1>
+        <div
+            className="absolute top-0 left-0 z-0 h-1/3 w-full "
+            style={{
+              backgroundImage:
+                "linear-gradient(to left bottom, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
+              borderColor: "rgba(92, 79, 240, 0.2)",
+            }}
+          ></div>
+          <div
+            className="absolute top-0 right-0 z-0 h-1/3 w-full"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right bottom, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
+              borderColor: "rgba(92, 79, 240, 0.2)",
+            }}
+          ></div>
+    </section>
         <form className="max-w-2xl mx-auto" action={handleSubmit}>
           {/* input for Name */}
           <div className="my-2">

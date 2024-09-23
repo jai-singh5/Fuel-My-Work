@@ -7,6 +7,28 @@ import About from "@/app/about/page";
 export default function Home() {
   return (
     <>
+    <div>
+    <section
+          id="features"
+          className="relative block px-6 py-10 md:py-10 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
+        ><div
+        className="absolute top-0 left-0 z-0 h-1/3 w-full "
+        style={{
+          backgroundImage:
+            "linear-gradient(to left bottom, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
+          borderColor: "rgba(92, 79, 240, 0.2)",
+        }}
+      ></div>
+      <div
+        className="absolute top-0 right-0 z-0 h-1/3 w-full"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right bottom, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
+          borderColor: "rgba(92, 79, 240, 0.2)",
+        }}
+      ></div>
+</section>
+    
     <div className="flex justify-center flex-col gap-4 items-center text-white h-[75vh] px-5 md:px-0">
       <div className="font-bold flex gap-2 md:text-5xl text-4xl justify-center items-center">Fuel Me Up <span><img src="fueling.gif" width={65} alt="" /></span></div>
       <p className="text-center">
@@ -15,6 +37,7 @@ export default function Home() {
       <p className="text-center">
         A place where your fans can fuel you up. Unleash the power of your fans and get your project funded.
       </p>
+      
       <div>
         <Link href={"/login"}>
         <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-bold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
@@ -67,6 +90,8 @@ export default function Home() {
       <p className="p-4 text-gray-200 text-md text-center font-sans">We believe in the power of community and the impact of collective support. By providing a platform for patrons to contribute, we aim to transform dreams into reality and foster a culture of creativity and innovation.
       </p>
       </div>
+    </div>
+    
     </div>
     </>
   );

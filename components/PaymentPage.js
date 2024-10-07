@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useEffect, useState } from "react";
 import Script from "next/script";
@@ -149,7 +150,7 @@ const PaymentPage = ({ username }) => {
                                         <span className="text-blue-500 font-bold">{p.name} </span> donated
                                         <span className="text-green-500 font-bold"> ₹{(p.amount)} </span>
                                         with a message
-                                        <span className="text-yellow-500 font-bold"> "{p.message}"</span>
+                                        <span className="text-yellow-500 font-bold"> `&quot;`{p.message}`&quot;`</span>
                                     </span>
                                 </li>
                             })}

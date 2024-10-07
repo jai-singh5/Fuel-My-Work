@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 
 import React from "react";
 import Link from "next/link";
@@ -85,7 +86,7 @@ export default function Home() {
       <div className="px-1 md:px-5 mt-12">
       <p className="p-4 text-gray-200 text-md text-center font-sans">At Fuel Me Up, we are dedicated to supporting developers, creators, and influencers by connecting them with their supporters. Our platform enables individuals to fund their projects and ideas, providing a space where creativity and innovation can thrive.
       </p>
-      <p className="p-4 text-gray-200 text-md text-center font-sans">Our mission is to empower talented individuals by facilitating financial support, allowing them to focus on what they do best – creating. Whether you're a developer coding the next big app, a content creator making engaging videos, or an influencer sharing your passion, Fuel Me Up is here to help you achieve your goals.
+      <p className="p-4 text-gray-200 text-md text-center font-sans">Our mission is to empower talented individuals by facilitating financial support, allowing them to focus on what they do best – creating. Whether you`&apos;`re a developer coding the next big app, a content creator making engaging videos, or an influencer sharing your passion, Fuel Me Up is here to help you achieve your goals.
       </p>
       <p className="p-4 text-gray-200 text-md text-center font-sans">We believe in the power of community and the impact of collective support. By providing a platform for patrons to contribute, we aim to transform dreams into reality and foster a culture of creativity and innovation.
       </p>
